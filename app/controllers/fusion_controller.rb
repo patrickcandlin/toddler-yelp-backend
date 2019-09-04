@@ -14,7 +14,7 @@ class FusionController < ApplicationController
         params = {
           term: term,
           location: location,
-          limit: 5
+          limit: 10
         }
 
         response = HTTP.auth("Bearer #{ENV['fusion_api_key']}").get(url, params: params)
