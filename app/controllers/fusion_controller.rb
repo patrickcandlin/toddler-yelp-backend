@@ -29,12 +29,6 @@ class FusionController < ApplicationController
 
   end
 
-
-
-  # private
-  #   def fusion_params
-  #     params.require(:fusions).permit(:term, location)
-  #   end
 end
 
-ActionController::Parameters.permit_all_parameters = true
+ActionController::Parameters.permit_all_parameters = false
